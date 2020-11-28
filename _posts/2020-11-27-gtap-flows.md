@@ -78,7 +78,7 @@ There is not a large amount of difference between the two networks; both appear 
 
 ## Energy dissipation
 
-We can also study the net imports and exports of embodied *dissipation* by visualizing it as a directed acyclic network over megaregions. Below, we see that in the consumption paradigm, `SOUTHERN AFRICA`, `CHINA` and `SOUTHEAST ASIA` are the predominant exporters, with significant intermediate regions including `SOUTH ASIA`, `SOUTH AMERICA`, `EASTERN EUROPE` and `EAST/WEST ASIA`. Primary importers of embodied dissipation include both highly prosperous regions such as `NORTHERN AMERICA` and `WESTERN EUROPE`, as well as impoverished regions such as `WEST/EAST/MIDDLE AFRICA`. It is worth noting the arrow from `NORTHERN AMERICA` to `EFTA`.
+We can also study the net imports and exports of embodied *dissipation* by visualizing it as a directed acyclic network over megaregions. Below, we see that in the consumption paradigm, `SOUTHERN AFRICA`, `CHINA` and `SOUTHEAST ASIA` are the predominant exporters, with significant intermediate regions including `SOUTH ASIA`, `SOUTH AMERICA`, `EASTERN EUROPE` and `EAST/WEST ASIA`. Primary importers of embodied dissipation include both highly prosperous regions such as `NORTHERN AMERICA` and `WESTERN EUROPE`, as well as impoverished regions such as `WEST/EAST/MIDDLE AFRICA`. It is worth noting the arrow from `NORTHERN AMERICA` to `WESTERN EUROPE`.
 
 <iframe
   src="/assets/gtap_graphs/disscon_net.html"
