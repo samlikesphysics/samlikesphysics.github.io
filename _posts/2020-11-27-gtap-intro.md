@@ -6,6 +6,12 @@ categories: geography gtap
 excerpt: "I describe how GTAP data was processed and combined with external data sets to form a base dataset of global monetary flows and regional inputs of labor, energy and carbon emissions."
 visible: 1
 ---
+<div class="button-wrapper" markdown="block" style="overflow:scroll;font-size:120%" align="center">
+
+[**Home**](/geography/gtap/) $$\|$$ [**Importers and exporters**](/geography/gtap/2020/11/27/gtap-mx.html) $$\left.\right>$$
+
+</div>
+
 # Production, consumption and capital: Introduction
 
 In this post, I describe how GTAP data was processed and combined with external data sets to form a base dataset of global monetary flows and regional inputs of labor, energy and $$\mathrm{CO}_2$$ emissions. This is a prelude to further posts where I explore how labor (measured in human-years, $$\mathrm{HY}$$), energy extraction/dissipation (measured in megatons of oil equivalent, $$\mathrm{MTOE}$$), and carbon emissions (measured in megatons of carbon dioxide, $$\mathrm{MTCO}_2$$) power worldwide consumption, and furthermore, how these activities are stimulated by capital investment. The dataset used is `GTAP 8` and is primarily geographical: it tracks production, consumption, investment and industrial activities on national and regional scales (Narayanan et. al., 2012). This means we can track the international flows of capital and embodied labor/energy/emissions, how such things flow within a nation are not available. Furthermore, the dataset we are using aggregates the extremely large and diverse world of industry into $$57$$ sectors, further limiting the scale of our analysis. Finally, `GTAP 8` only contains national-level information for $$114$$ countries; the rest of the world's nations are aggregated into $$20$$ regions. These aggregated regions only account for $$5.5 \%$$ of global trade.
@@ -217,3 +223,9 @@ based on our calculations.
 These results are not far off what we would expect of a population map,
 which is quite reasonable–––fluctuations from this ideal
 would result from labor underutilization and differences in age distribution.
+
+<div class="button-wrapper" markdown="block" style="overflow:scroll;font-size:120%" align="center">
+
+[**Home**](/geography/gtap/) $$\|$$ [**Importers and exporters**](/geography/gtap/2020/11/27/gtap-mx.html) $$\left.\right>$$
+
+</div>

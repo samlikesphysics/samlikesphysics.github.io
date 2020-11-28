@@ -6,6 +6,13 @@ categories: geography gtap
 excerpt: "I use network visualizations to perceive directional relationships between regions of the globe."
 visible: 1
 ---
+
+<div class="button-wrapper" markdown="block" style="overflow:scroll;font-size:120%" align="center">
+
+$$\left<\right.$$ [**Importers and exporters**](/geography/gtap/2020/11/27/gtap-mx.html) $$\|$$ [**Home**](/geography/gtap/)
+
+</div>
+
 # Production, consumption and capital: Net flows
 
 In this post, I use network visualizations to perceive directional relationships between regions of the globe. This is mostly for fun but in part for better understanding. Previously we looked at net exporters and importers of resources; here, we will get a sense of where those exports are going, or from whence the imports come. There is a tradeoff–––to usefully visualize this, it is necessary to group countries together in order to reduce visual noise. The following categorizations are modified slightly from those used in (Bergmann, 2012).
@@ -17,22 +24,22 @@ The above charts show whether nations are net exporters or importers of extracte
 | MEGAREGION | Regions |
 | :---: | :--- |
 | **CHINA** | China* |
-| **OCEANIA** | Australia, New Zealand, Papua New Guinea, Marshall Islands, American Samoa, Cook Islands, Fiji, Micronesia, Guam, Kiribati, Northern Mariana Islands, New Caledonia, Norfolk Island, Niue, Nauru, Palau, French Polynesia, Solomon Islands, Tokelau, Tonga, Tuvalu, Vanuatu, Wallis and Futuna Islands, Samoa |
-| **EAST ASIA** | Japan, South Korea, Taiwan, Hong Kong, Macau, Singapore**, North Korea |
-| **SOUTHEAST ASIA** | Indonesia, Cambodia, Laos, Myanmar, Thailand, Vietnam, Malaysia, Philippines, Singapore, Brunei, East Timor |
-| **SOUTH ASIA** | India, Bangladesh, Pakistan, Sri Lanka |
-| **NORTH AMERICA** | United States, Canada, Bermuda, Greenland, Saint Pierre, Miquelon |
-| **SOUTH AMERICA** |Brazil, Argentina, Bolivia, Chile, Colombia, Ecuador, Paraguay, Peru, Uruguay, Venezuela, French Guiana, Falkland Islands, Guyana, Suriname, Belize|
-| **C. AMERICA & CARIBBEAN** | Mexico, Costa Rica, Guatemala, Nicaragua, Panama, Honduras, Belize, El Salvador, Dominican Republic, Aruba, Anguilla, former Netherlands Antilles, Antigua and Barbuda, Bahamas, Barbados, Cuba, Cayman Islands, Dominica, Guadeloupe, Grenada, Haiti, Jamaica, Saint Kitts and Nevis, Saint Lucia, Montserrat, Martinique, Puerto Rico, Turks and Caicos Islands, Trinidad and Tobago, Saint Vincent and the Grenadines, British Virgin Islands, United States Virgin Islands |
-| **WESTERN EUROPE** | Austria, Belgium, Denmark, Finland, France, Germany, Ireland, Italy, Luxembourg, Malta, Netherlands, Portugal, Spain, Sweden, Great Britain, Switzerland, Norway, Iceland, Liechtenstein |
-| **EASTERN EUROPE** | Cyprus, Czech Republic, Estonia, Greece, Hungary, Latvia, Lithuania, Poland, Slovakia, Slovenia, Albania, Bulgaria, Croatia, Romania, Bosnia and Herzegovina, Andorra, Faroe Islands, Gibraltar, Monaco, Macedonia, San Marino, Serbia, Vatican City|
-| **FORMER USSR** | Belarus, Russia, Ukraine, Moldova, Kazakhstan, Kyrghyzstan, Tajikistan, Turkmenistan, Uzbekistan, Armenia, Azerbaijan, Georgia, Mongolia*** |
-| **WEST ASIA** | Bahrain, Iran, Israel, Kuwait, Oman, Qatar, Saudi Arabia, Turkey, United Arab Emirates, Iraq, Jordan, Lebanon, Palestine, Syria, Yemen |
-| **NORTH AFRICA** | Egypt, Morocco, Tunisia, Algeria, Libya, Western Sahara |
-| **WEST AFRICA** | Benin, Burkina Faso, Cameroon, Ivory Coast, Ghana, Guinea, Nigeria, Senegal, Togo, Mali, Cape Verde, Gambia, Guinea-Bissau, Liberia, Mauritania, Niger, Saint Helena, Sierra Leone |
-| **MIDDLE AFRICA** | Angola, Democratic Republic of the Congo, Cameroon, Central African Republic, Republic of the Congo, Gabon, Equatorial Guinea, Sao Tome and Principe, Chad |
-| **EAST AFRICA** | Ethiopia, Kenya, Madagascar, Malawi, Mauritius, Mozambique, Rwanda, Tanzania, Uganda, Zambia, Zimbabwe, Burundi, Comoros, Djibouti, Eritrea, Mayotte, Reunion, Sudan, Somalia, Seychelles |
-| **SOUTHERN AFRICA** | South Africa, Botswana, Namibia, Lesotho, Swaziland |
+| **OCEANIA** | Australia, New Zealand, XOC (Papua New Guinea, Marshall Islands, American Samoa, Cook Islands, Fiji, Micronesia, Guam, Kiribati, Northern Mariana Islands, New Caledonia, Norfolk Island, Niue, Nauru, Palau, French Polynesia, Solomon Islands, Tokelau, Tonga, Tuvalu, Vanuatu, Wallis and Futuna Islands, Samoa) |
+| **EAST ASIA** | Japan, South Korea, Taiwan, Hong Kong, Singapore**, XEA (Macau, North Korea) |
+| **SOUTHEAST ASIA** | Indonesia, Cambodia, Laos, Myanmar, Thailand, Vietnam, Malaysia, Philippines, XSE (Brunei, East Timor) |
+| **SOUTH ASIA** | India, Nepal, Bangladesh, Pakistan, Sri Lanka |
+| **NORTH AMERICA** | United States, Canada, XNA (Bermuda, Greenland, Saint Pierre, Miquelon) |
+| **SOUTH AMERICA** | Brazil, Argentina, Bolivia, Chile, Colombia, Ecuador, Paraguay, Peru, Uruguay, Venezuela, XSM (French Guiana, Falkland Islands, Guyana, Suriname, Belize) |
+| **C. AMERICA & CARIBBEAN** | Mexico, Costa Rica, Guatemala, Nicaragua, Panama, Honduras, XCA (Belize, El Salvador), XCB (Dominican Republic, Aruba, Anguilla, former Netherlands Antilles, Antigua and Barbuda, Bahamas, Barbados, Cuba, Cayman Islands, Dominica, Guadeloupe, Grenada, Haiti, Jamaica, Saint Kitts and Nevis, Saint Lucia, Montserrat, Martinique, Puerto Rico, Turks and Caicos Islands, Trinidad and Tobago, Saint Vincent and the Grenadines, British Virgin Islands, United States Virgin Islands) |
+| **WESTERN EUROPE** | Austria, Belgium, Denmark, Finland, France, Germany, Ireland, Italy, Luxembourg, Malta, Netherlands, Portugal, Spain, Sweden, Great Britain, Switzerland, Norway, XEF (Iceland, Liechtenstein) |
+| **EASTERN EUROPE** | Cyprus, Czech Republic, Estonia, Greece, Hungary, Latvia, Lithuania, Poland, Slovakia, Slovenia, Albania, Bulgaria, Croatia, Romania, Bosnia and Herzegovina, XER (Andorra, Faroe Islands, Gibraltar, Monaco, Macedonia, San Marino, Serbia, Vatican City)|
+| **FORMER USSR** | Belarus, Russia, Ukraine, Kazakhstan, Kyrghyzstan, Armenia, Azerbaijan, Georgia, Mongolia***, XEE (Moldova), XSU (Tajikistan, Turkmenistan, Uzbekistan) |
+| **WEST ASIA** | Bahrain, Iran, Israel, Kuwait, Oman, Qatar, Saudi Arabia, Turkey, United Arab Emirates, XWS (Iraq, Jordan, Lebanon, Palestine, Syria, Yemen) |
+| **NORTH AFRICA** | Egypt, Morocco, Tunisia, XNF (Algeria, Libya, Western Sahara) |
+| **WEST AFRICA** | Benin, Burkina Faso, Ivory Coast, Ghana, Guinea, Nigeria, Senegal, Togo, XWF (Mali, Cape Verde, Gambia, Guinea-Bissau, Liberia, Mauritania, Niger, Saint Helena, Sierra Leone) |
+| **MIDDLE AFRICA** | Cameroon, XAC (Angola, Democratic Republic of the Congo), XCF (Central African Republic, Republic of the Congo, Gabon, Equatorial Guinea, Sao Tome and Principe, Chad) |
+| **EAST AFRICA** | Ethiopia, Kenya, Madagascar, Malawi, Mauritius, Mozambique, Rwanda, Tanzania, Uganda, Zambia, Zimbabwe, XEC (Burundi, Comoros, Djibouti, Eritrea, Mayotte, Reunion, Sudan, Somalia, Seychelles) |
+| **SOUTHERN AFRICA** | South Africa, Botswana, Namibia, XSC (Lesotho, Swaziland) |
 | **XTW** | Antarcica, French Southern Territories, Bouvet Island, British Indian Ocean Territory |
 
 *\* China is placed in a category on its own due to its size and its distinct economic nature from the other East Asian countries.*
@@ -120,3 +127,9 @@ The net investment flow of labor looks quite similar. The primary distinction he
   src="/assets/gtap_graphs/labinv_net.html"
   style="width:100%; height:700px;"
 ></iframe>
+
+<div class="button-wrapper" markdown="block" style="overflow:scroll;font-size:120%" align="center">
+
+$$\left<\right.$$ [**Importers and exporters**](/geography/gtap/2020/11/27/gtap-mx.html) $$\|$$ [**Home**](/geography/gtap/)
+
+</div>
