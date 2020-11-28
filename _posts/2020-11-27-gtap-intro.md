@@ -1,16 +1,13 @@
 ---
 layout: post
 title:  "Production, consumption and capital: Introduction"
+short: "Introduction"
 date:   2020-11-27 01:00:00 -0800
+homepage: /geography/gtap/
 categories: geography gtap 
 excerpt: "I describe how GTAP data was processed and combined with external data sets to form a base dataset of global monetary flows and regional inputs of labor, energy and carbon emissions."
 visible: 1
 ---
-<div class="button-wrapper" markdown="block" style="overflow:scroll;font-size:120%" align="center">
-
-[**Home**](/geography/gtap/) $$\|$$ [**Importers and exporters**](/geography/gtap/2020/11/27/gtap-mx.html) $$\left.\right>$$
-
-</div>
 
 # Production, consumption and capital: Introduction
 
@@ -223,9 +220,3 @@ based on our calculations.
 These results are not far off what we would expect of a population map,
 which is quite reasonable–––fluctuations from this ideal
 would result from labor underutilization and differences in age distribution.
-
-<div class="button-wrapper" markdown="block" style="overflow:scroll;font-size:120%" align="center">
-
-[**Home**](/geography/gtap/) $$\|$$ [**Importers and exporters**](/geography/gtap/2020/11/27/gtap-mx.html) $$\left.\right>$$
-
-</div>

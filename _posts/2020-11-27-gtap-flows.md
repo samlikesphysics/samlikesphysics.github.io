@@ -1,17 +1,13 @@
 ---
 layout: post
 title:  "Production, consumption and capital: Net flows"
+short: "Net flows"
 date:   2020-11-27 03:00:00 -0800
+homepage: /geography/gtap/
 categories: geography gtap 
 excerpt: "I use network visualizations to perceive directional relationships between regions of the globe."
 visible: 1
 ---
-
-<div class="button-wrapper" markdown="block" style="overflow:scroll;font-size:120%" align="center">
-
-$$\left<\right.$$ [**Importers and exporters**](/geography/gtap/2020/11/27/gtap-mx.html) $$\|$$ [**Home**](/geography/gtap/)
-
-</div>
 
 # Production, consumption and capital: Net flows
 
@@ -127,9 +123,3 @@ The net investment flow of labor looks quite similar. The primary distinction he
   src="/assets/gtap_graphs/labinv_net.html"
   style="width:100%; height:700px;"
 ></iframe>
-
-<div class="button-wrapper" markdown="block" style="overflow:scroll;font-size:120%" align="center">
-
-$$\left<\right.$$ [**Importers and exporters**](/geography/gtap/2020/11/27/gtap-mx.html) $$\|$$ [**Home**](/geography/gtap/)
-
-</div>
