@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Production, consumption and capital: Introduction"
-date:   2020-11-27 16:00:00 -0800
+date:   2020-11-27 01:00:00 -0800
 categories: geography gtap 
 excerpt: "I describe how GTAP data was processed and combined with external data sets to form a base dataset of global monetary flows and regional inputs of labor, energy and carbon emissions."
 visible: 1

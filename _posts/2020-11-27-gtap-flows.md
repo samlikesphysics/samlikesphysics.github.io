@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Production, consumption and capital: Net flows"
-date:   2020-11-27 18:00:00 -0800
+date:   2020-11-27 03:00:00 -0800
 categories: geography gtap 
 excerpt: "I use network visualizations to perceive directional relationships between regions of the globe."
 visible: 1
