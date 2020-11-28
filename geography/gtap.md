@@ -2,6 +2,7 @@
 layout: catpage
 title: Production, consumption and capital
 children: gtap
+list_title: Notes
 permalink: /geography/gtap/
 ---
 
