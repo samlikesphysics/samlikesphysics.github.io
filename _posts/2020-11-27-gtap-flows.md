@@ -9,8 +9,6 @@ excerpt: "I use network visualizations to perceive directional relationships bet
 visible: 1
 ---
 
-# Production, consumption and capital: Net flows
-
 In this post, I use network visualizations to perceive directional relationships between regions of the globe. This is mostly for fun but in part for better understanding. Previously we looked at net exporters and importers of resources; here, we will get a sense of where those exports are going, or from whence the imports come. There is a tradeoff–––to usefully visualize this, it is necessary to group countries together in order to reduce visual noise. The following categorizations are modified slightly from those used in (Bergmann, 2012).
 
 The above charts show whether nations are net exporters or importers of extracted energy; however, they do not show to whom exports occur by region, or from whence imports have come. The next two visualizations have clustered countries into *megaregions* determined by the GTAP database. The megaregions are as follows:
