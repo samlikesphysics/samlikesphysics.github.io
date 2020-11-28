@@ -96,7 +96,7 @@ There are noteworthy changes in the investment network. First, we note how both 
 
 ## $$\mathrm{CO}_2$$ emissions
 
-The similarity between dissipation and $\mathrm{CO}_2$ emissions continues when we consider the networks of net consumption and investment flows of embodied $\mathrm{CO}_2$ emissions; however, we note that `EAST ASIA` shifts significantly downwards towards the importers. That `EAST ASIA` is much more an exporter of dissipation than it is of carbon emissions is likely a signifier of the types of energy used. In comparison, essentially every other region moves *upwards* in their relative vertical position when we switch from looking at dissipation to emissions.
+The similarity between dissipation and $$\mathrm{CO}_2$$ emissions continues when we consider the networks of net consumption and investment flows of embodied $$\mathrm{CO}_2$$ emissions; however, we note that `EAST ASIA` shifts significantly downwards towards the importers. That `EAST ASIA` is much more an exporter of dissipation than it is of carbon emissions is likely a signifier of the types of energy used. In comparison, essentially every other region moves *upwards* in their relative vertical position when we switch from looking at dissipation to emissions.
 
 <iframe
   src="/assets/gtap_graphs/co2con_net.html"
