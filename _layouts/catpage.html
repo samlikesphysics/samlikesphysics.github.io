@@ -17,7 +17,7 @@ layout: default
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
+            {{ post.short | escape }}
           </a>
         </h3>
         {%- if site.show_excerpts -%}
@@ -30,7 +30,7 @@ layout: default
   {%- endif -%}
 
   {{ content }}
-  
+
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 </div>
