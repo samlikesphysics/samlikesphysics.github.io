@@ -434,6 +434,10 @@ body.full-width, .content-listing, ul.content-listing li.listing{ width: 90%;
        padding: 0% 5%;
 
 }
+li.listing{
+  padding-left: 22px ;
+  text-indent: -22px ;
+}
 .full-width article p{
   width: 90%;
 }
