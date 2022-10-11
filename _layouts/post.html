@@ -4,5 +4,29 @@ layout: default
 <h1>{{ page.title}}</h1>
 <p class="subtitle">{{ page.date | date: "%B %-d, %Y" }}</p>
 
+<div class="PageNavigation" style="overflow:scroll;font-size:120%" align="center">
+    {% if page.previous.url %}
+    <a class="prev" href="{{page.previous.url}}"> &laquo; {{page.previous.short}}</a>
+    {% endif %}
+    |
+    <a class="next" href="{{page.homepage}}"> Home </a>
+    |
+    {% if page.next.url %}
+      <a class="next" href="{{page.next.url}}">{{page.next.short}} &raquo;</a>
+    {% endif %}
+</div>
+
 {{ content }}
+
+<div class="PageNavigation" style="overflow:scroll;font-size:120%" align="center">
+    {% if page.previous.url %}
+    <a class="prev" href="{{page.previous.url}}"> &laquo; {{page.previous.short}}</a>
+    {% endif %}
+    |
+    <a class="next" href="{{page.homepage}}"> Home </a>
+    |
+    {% if page.next.url %}
+      <a class="next" href="{{page.next.url}}">{{page.next.short}} &raquo;</a>
+    {% endif %}
+</div>
 

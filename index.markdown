@@ -9,7 +9,13 @@ guy. You can just call me Sam." %}
 
 I'm currently a 6th year PhD. student studying physics and complex systems at UC
 Davis, in Jim Crutchfield's lab{% sidenote "Jim" "[Complexity Sciences
-Center](http://csc.ucdavis.edu/Welcome.html)"%}.
+Center](http://csc.ucdavis.edu/Welcome.html)"%}. I study complex systems using a
+combination of theoretical mathematics and computational modeling. I'm into
+information-theory-based data science and have written a [package](/ruckus/) 
+on time-series analysis with kernel embeddings, and [another](/stoclust/) 
+on stochastic clustering. When I graduate, I'm looking to apply my skillsets
+towards emerging technologies in AI-driven sustainability.
+I also have an adorable---but *strangely* cat-like---dog.
 {% marginfigure 'mf-ruby-book' 'assets/img/ruby2.png' 'My dog Ruby. And also
 me.'  %}
 
@@ -20,15 +26,16 @@ of my past and ongoing experiences---but I'll list the quick facts here too.
 My dissertation work has focused on
 how complex systems process information, exploring applications in quantum
 computing, machine learning, and most recently in carbon policy analysis. 
-These are not as far apart as they might seem. A quantum computer producing
-temporal data needs to take advantage of that data's structure to be maximally
-efficient. That same structure is extremely relevant for inference, pattern discovery and
-modeling. My Projects and 
+These are not as far apart as they might seem. The same laws of statistics
+which govern quantum computers are also important for discovering structure in
+complex data and even show up in economic/ecological models. My [Projects](/projects/) and 
 [Publications](/publications/) pages give more detail on the research I do, and how it
 all fits together.
 
 {%newthought 'My home is in North Carolina,'%} though I live in Davis at the
-moment. I grew up in Cary and received my undergraduate degrees in Physics and
+moment with my wife Catie, 
+who is also from NC and is getting her PhD in Animal Science. 
+I grew up in Cary and received my undergraduate degrees in Physics and
 Mathematics at North Carolina State University in Raleigh.
 
 There I researched general
