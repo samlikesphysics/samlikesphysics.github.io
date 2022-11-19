@@ -59,6 +59,10 @@ GEM
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     trollop (2.9.9)
+    tzinfo (2.0.5)
+      concurrent-ruby (~> 1.0)
+    tzinfo-data (1.2022.6)
+      tzinfo (>= 1.0.0)
     unicode-display_width (1.7.0)
 
 PLATFORMS
@@ -68,6 +72,8 @@ DEPENDENCIES
   jekyll
   jgd
   rouge
+  tzinfo
+  tzinfo-data
 
 BUNDLED WITH
    2.1.4
