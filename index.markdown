@@ -7,9 +7,9 @@ layout: page
 {% newthought 'Samuel P. Loomis, PhD.' %} {% sidenote "One" "The P. is to distinguish myself from the Halloween
 guy. You can just call me Sam." %}
 
-I model complex systems at Syngenta Seeds, and received my PhD. in
-physics and complex systems in 2022. I'm into
-information-theory-based data science and have written a [package](/ruckus/) 
+I currently work at Syngenta Seeds, and received my PhD. in
+physics and complex systems in 2022. I'm a complex systems modeler who's super into
+information-theory-based data science, and have written a [package](/ruckus/) 
 on time-series analysis with kernel embeddings, and [another](/stoclust/) 
 on stochastic clustering. On the side I'm also an amateur astronomer, a huge
 history/geography nerd, and a beginning farmer (though the only animal on our
@@ -20,7 +20,8 @@ farm so far is currently a 12-pound chiweenie {% marginfigure 'mf-ruby-book'
 Vitae](/assets/docs/loomis-cv.pdf)' %} contains a detailed summary
 of my past and ongoing experiences---but I'll list the quick facts here too.
 
-My dissertation work focused on
+I got my PhD. at UC Davis in Jim Crutchfield's lab {% sidenote "Jim"
+"[Complexity Sciences Center](http://csc.ucdavis.edu/Welcome.html)" %}. My dissertation work focused on
 how complex systems process information, exploring applications in quantum
 computing, machine learning, and most recently in carbon policy analysis. 
 These are not as far apart as they might seem. The same laws of statistics
@@ -30,7 +31,7 @@ complex data and even show up in economic/ecological models. My [Research](/rese
 all fits together.
 
 {%newthought 'My home is in North Carolina,'%} where my wife Catie and I live
-close to our families on her family's six-generation farm.
+close to our families on her family's sixth-generation farm.
 I grew up in Cary and received my undergraduate degrees in Physics and
 Mathematics at North Carolina State University in Raleigh.
 
