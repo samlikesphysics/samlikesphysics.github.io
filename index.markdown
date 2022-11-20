@@ -4,37 +4,33 @@
 title: About me
 layout: page
 ---
-{% newthought 'Samuel P. Loomis' %} {% sidenote "One" "The P. is to distinguish myself from the Halloween
+{% newthought 'Samuel P. Loomis, PhD.' %} {% sidenote "One" "The P. is to distinguish myself from the Halloween
 guy. You can just call me Sam." %}
 
-I'm currently a 6th year PhD. student studying physics and complex systems at UC
-Davis, in Jim Crutchfield's lab{% sidenote "Jim" "[Complexity Sciences
-Center](http://csc.ucdavis.edu/Welcome.html)"%}. I study complex systems using a
-combination of theoretical mathematics and computational modeling. I'm into
+I model complex systems at Syngenta Seeds, and received my PhD. in
+physics and complex systems in 2022. I'm into
 information-theory-based data science and have written a [package](/ruckus/) 
 on time-series analysis with kernel embeddings, and [another](/stoclust/) 
-on stochastic clustering. When I graduate, I'm looking to apply my skillsets
-towards emerging technologies in AI-driven sustainability.
-I also have an adorable---but *strangely* cat-like---dog.
-{% marginfigure 'mf-ruby-book' 'assets/img/ruby2.png' 'My dog Ruby. And also
-me.'  %}
+on stochastic clustering. On the side I'm also an amateur astronomer, a huge
+history/geography nerd, and a beginning farmer (though the only animal on our
+farm so far is currently a 12-pound chiweenie {% marginfigure 'mf-ruby-book'
+'assets/img/ruby2.png' 'My dog Ruby. And also me.'%}).
 
 {% newthought '[My Curriculum
 Vitae](/assets/docs/loomis-cv.pdf)' %} contains a detailed summary
 of my past and ongoing experiences---but I'll list the quick facts here too.
 
-My dissertation work has focused on
+My dissertation work focused on
 how complex systems process information, exploring applications in quantum
 computing, machine learning, and most recently in carbon policy analysis. 
 These are not as far apart as they might seem. The same laws of statistics
 which govern quantum computers are also important for discovering structure in
-complex data and even show up in economic/ecological models. My [Projects](/projects/) and 
-[Publications](/publications/) pages give more detail on the research I do, and how it
+complex data and even show up in economic/ecological models. My [Research](/research/) and 
+[Publications](/publications/) pages give more detail on the scientific work I've done, and how it
 all fits together.
 
-{%newthought 'My home is in North Carolina,'%} though I live in Davis at the
-moment with my wife Catie, 
-who is also from NC and is getting her PhD in Animal Science. 
+{%newthought 'My home is in North Carolina,'%} where my wife Catie and I live
+close to our families on her family's six-generation farm.
 I grew up in Cary and received my undergraduate degrees in Physics and
 Mathematics at North Carolina State University in Raleigh.
 
