@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Research</title>
+  <meta name="description" content="I'm not the Halloween guy.">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+</script>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+ <!--   <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+  
+
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"> -->
+
+  <link rel="canonical" href="/research/">
+
+  <link rel="alternate" type="application/rss+xml" title="Samuel P. Loomis" href="/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<a href="/"><img class="badge"
+	src="/assets/img/ruby_badge.png" alt="CH"></a>
+	
+		
+  	
+		
+		    
+		      <a href="/">About me</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/publications/">Publications</a>
+		    
+	    
+  	
+		
+		    
+		      <a class="active" href="/research/" class="active">Research</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/blog/">Blog</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/css/print.css"></a>
+		    
+	    
+  	
+		
+  	
+	</nav>
+	<ul class="footer-links">
+		<li><a href="mailto:sloomis@ucdavis.edu"><img src="/assets/icons/mail.png"></a></li>    
+		
+		  <li>
+			<a href="//researchgate.net/profile/Samuel-Loomis"><img src="/assets/icons/researchgate.png" alt="CH"></a>
+		  </li>
+		
+		  <li>
+			<a href="//linkedin.com/in/samuel-loomis-92498b88/"><img src="/assets/icons/linkedin.png" alt="CH"></a>
+		  </li>
+		
+		  <li>
+			<a href="//github.com/samlikesphysics"><img src="/assets/icons/github.png" alt="CH"></a>
+		  </li>
+		  
+	  </ul>
+	  <hr class="slender">
+</header>
+    <article class="group">
+      <h1>Research</h1>
+<p class="subtitle"></p>
+
+
+<p>This page contains some summaries of the projects I’ve worked on. Click the link
+in the list below to be taken to the project summary.</p>
+
+<p><span class="newthought">Contents</span></p>
+
+<ul>
+  <li><a href="#ruckus"><code class="language-plaintext highlighter-rouge">ruckus</code></a></li>
+  <li><a href="#CarbonChaos">Carbon Chaos!</a></li>
+  <li><a href="#QuantumCompression">Efficient Quantum Computing</a></li>
+  <li><a href="#stoclust"><code class="language-plaintext highlighter-rouge">stoclust</code></a></li>
+</ul>
+
+<hr class="slender" />
+
+<h2 id="ruckus"><code class="language-plaintext highlighter-rouge">ruckus</code><a name="stoclust"></a></h2>
+<h4 id="kernel-embedding-networks-with-python-and-scikit-learn">Kernel embedding networks with Python and <code class="language-plaintext highlighter-rouge">scikit-learn</code></h4>
+
+<p><code class="language-plaintext highlighter-rouge">ruckus</code> is my latest project—a Python package for working with networks of reproducing
+kernel Hilbert spaces, for use in machine learning, time-series analysis, 
+and dynamical systems modeling. This package is inspired by and intended to further my own work
+on the foundations of RKHS methods for time-series prediction <a href="https://arxiv.org/abs/2109.09203">(Loomis &amp; Crutchfield
+2021)</a>.</p>
+
+<p>Reproducing kernel Hilbert spaces (RKHS’s, or, as I say it, “ruckuses”) form the mathematical bedrock of numerous machine learning techniques, from support vector machines and Gaussian processes to neural tangent kernels and random feature embeddings.</p>
+
+<p><code class="language-plaintext highlighter-rouge">ruckus</code> provides specialized objects for defining, fitting and applying RKHS’s to data,
+as well as the necessary tools to build intricately-designed deep and convolutional RKHS networks.
+It also supports kernel distributional embeddings and efficient sampling of forecasts via kernel herding.</p>
+
+<figure><img src="/assets/img/Lorenz.png" /><figcaption class="maincolumn-figure">Predicting the Lorenz attractor with <code>ruckus</code>: see our
+<a href="https://samlikesphysics.github.io/ruckus/#example">example</a> in the documentation.</figcaption></figure>
+
+<p><em>This project is a work in progress. Stay tuned for more updates!</em></p>
+
+<p><span class="newthought">Packages</span></p>
+
+<h4 id="ruckus-1"><a href="https://samlikesphysics.github.io/ruckus/"><code class="language-plaintext highlighter-rouge">ruckus</code></a></h4>
+
+<ul>
+  <li><a href="/projects/">Return to top</a></li>
+</ul>
+
+<hr class="slender" />
+
+<h2 id="carbon-chaos">Carbon Chaos!<a name="CarbonChaos"></a></h2>
+<h4 id="nonequilibrium-methods-in-emissions-analysis">Nonequilibrium Methods in Emissions Analysis</h4>
+
+<p><span class="newthought">The “carbon footprint”</span>  has become a fairly ubiquitous character in discussions
+of climate change and economic policy. The methods for computing footprints
+originate in the field of <em>input-output analysis</em>, which traces through networks
+of economic dependency to link up consumption activities with the production
+activities—and resulting emissions—which sustain them. This allows not only
+calculating how much carbon is necessary to support someone’s lifestyle, but
+also determines the geographic distribution of emissions, linking up the consumption practices
+of one region with pollution in another.</p>
+
+<figure><iframe src="/assets/html/co2con_net.html" style="width:90%;height:550px;"></iframe><figcaption class="maincolumn-figure">This interactive figure shows
+the network of &#8220;carbon dependencies&#8221; across the globe. Hover over a node to see
+the region. An arrow pointing from, say, &#8220;South America&#8221; to &#8220;Europe&#8221; indicates
+that emissions produced in South America are a part of the European carbon
+footprint.</figcaption></figure>
+
+<p>Input-output analysis rests on a number of assumptions. We analyzed the
+consequences of these assumptions in <a href="https://arxiv.com/abs/2106.03948">(Loomis, Cooper &amp; Crutchfield
+2021)</a>, with data from the <a href="https://www.gtap.agecon.purdue.edu/">Global Trade
+Aggregation Project</a>. 
+The upshot is that whether a nation’s
+footprint is located within domestic borders or beyond is primarily determined
+by that nation’s “carbon intensity”: the amount of \(\mathrm{CO}_2\) emitted 
+per dollar of income. This arises as a theoretical consequence of input-output
+assumptions, with <em>majorization</em>—a tool from nonequilibrium
+thermodynamics—playing a central role. These results give a better
+understanding of how input-output models derive their results, but consequently casts doubt
+on their ability to properly test hypotheses of <em>unequal exchange</em> of embodied
+pollution between regions.</p>
+
+<figure><img src="/assets/img/carbonmap.png" /><figcaption class="maincolumn-figure">Map color indicates the measured &#8220;carbon intensity&#8221; of each region. Leontief analysis
+was applied to null models generated with random trade networks; pie wedges
+indicate the probability of being a net exporter vs. importer of embodied
+carbon. High-intensity
+regions had a strong tendency to export embodied carbon, 
+even when economic structure was completely randomized. This can be explained
+with tools from thermodynamics: see 
+<a href="https://arxiv.com/abs/2106.03948">(Loomis, Cooper &amp; Crutchfield 2021)</a>.</figcaption></figure>
+
+<p>Because this effect is purely mathematical in nature, it can be observed for any
+resource one tracks through input-output analysis. The following graph shows the
+relationship between national average wage (the analagous “intensity” for labor)
+and the ratio of produced to consumed embodied labor, for each nation. The
+correlation is highly suggestive. However, it is chiefly a mathematical effect.
+Input-output analysis <em>predicts</em> that high-wage nations import more embodied
+labor, but it does not <em>provide evidence</em>, an important distinction elucidated
+by our thermodynamic analysis.</p>
+
+<figure><iframe src="/assets/html/labcon_wage.html" style="width:90%;height:550px;"></iframe><figcaption class="maincolumn-figure">The x-axis shows the ratio of
+produced to consumed embodied labor by each nation (P/C ratio). The y-axis shows
+the national wage. We also include the Kendall-Tau correlation measure for these
+two variables: \(\tau = -0.65\). Hover over a dot to see the nation&#8217;s ISO
+identifier and the precise values of wage and P/C. Nations are color-coded
+according to region.</figcaption></figure>
+
+<p>One of the more questionable assumptions of input-output analysis, which is
+crucial to the results above, is its inherent linearity.
+Further work in this area will seek to offer alternatives to input-output
+analysis, performing nonlinear dynamical analysis of policy impacts to determine
+the more complex relationships between consumption, production and emissions.</p>
+
+<p><span class="newthought">Articles</span></p>
+
+<h4 id="loomis-et-al-nonequilibrium-thermodynamics-in-measuring-carbon-footprints-submitted"><a href="https://arxiv.com/abs/2106.03948">Loomis et al. Nonequilibrium thermodynamics in measuring carbon footprints. Submitted.</a></h4>
+
+<p><span class="newthought">Packages</span></p>
+
+<h4 id="githubcomsamlikesphysicsnetacam_codegit"><a href="https://github.com/samlikesphysics/netacam_code">github.com/samlikesphysics/netacam_code.git</a></h4>
+
+<ul>
+  <li><a href="/projects/">Return to top</a></li>
+</ul>
+
+<hr class="slender" />
+
+<h2 id="efficient-quantum-computing">Efficient Quantum Computing<a name="QuantumCompression"></a></h2>
+<h4 id="quantum-memory-compression-and-energy-savings">Quantum memory compression and energy savings</h4>
+
+<div class="epigraph"><blockquote><p>Computers may be thought of as engines for transforming free energy
+into waste heat and mathematical work.</p><footer>Charles Bennett, <cite>The thermodynamics of
+computation---a review. 1982.</cite></footer></blockquote></div>
+
+<p><span class="newthought">Einstein proved that matter and energy could be interchanged;</span> 
+some time later, Rolf Landauer proved that energy and <em>information</em> could be
+interchanged as well. More specifically, in his resolution of the paradox of
+Maxwell’s Demon, Landauer demonstrated<label for="Lan" class="margin-toggle sidenote-number"></label><input type="checkbox" id="Lan" class="margin-toggle" /><span class="sidenote">R. Landauer. <em>Irreversibility and heat generation in the computing process.</em> 1961. </span> 
+that the erasure of a bit of information
+required expending a minimum amount energy, \(kT\ln 2\).<label for="kT" class="margin-toggle sidenote-number"></label><input type="checkbox" id="kT" class="margin-toggle" /><span class="sidenote">Here \(k\)
+is the Boltzmann constant and \(T\) is the ambient temperature of the computer. </span>
+Bit erasure is a key tool in computational tasks and so Landauer’s
+principle placed fundamental energy costs on computation itself.</p>
+
+<p>We’ve contributed to this line of work by studying a particular computational
+task: simulating a specified pattern, written onto an empty tape. Though this
+may sound simple, the pattern may be arbitrarily complicated: anything from
+random data to Shakespeare. This makes simulation an extremely deep arena for
+studying the costs of computation.</p>
+
+<p>The most efficient machine for generating a pattern using only classical physics is
+called an \(\epsilon\)-machine. We examined a recent quantum extension of the
+\(\epsilon\)-machine, called the \(q\)-machine, and put it to the test: under
+what conditions do \(q\)-machines provide crucial advantages in memory and
+energy costs?</p>
+
+<figure><img src="/assets/img/quantum3.png" /><figcaption class="maincolumn-figure">A schematic of a computer which writes a specified pattern of symbols onto
+an empty tape. The computer is governed by a stochastic controller called the 
+\(\epsilon\)-machine. It may utilize both heat and free energy to alter the
+tape, and it has a finite set of memory states for reference. From <a href="https://doi.org/10.1103/physrevlett.125.020601">(Loomis &amp;
+Crutchfield 2020)</a>.</figcaption></figure>
+
+<p>We provided the first proofs that \(q\)-machines are <em>always</em> able to improve on
+\(\epsilon\)-machines in memory costs 
+<a href="https://doi.org/10.1007/s10955-019-02344-x">(Loomis &amp; Crutchfield 2019)</a>.
+However, this work did not initially address the thermodynamic angle, so it
+remained unclear whether this improvement in memory came at a cost. The answer
+required distinguishing between two classes of \(\epsilon\)-machine, called the
+<em>forward</em> and <em>reverse</em> varieties. We discovered in two companion papers<label for="Pprs" class="margin-toggle sidenote-number"></label><input type="checkbox" id="Pprs" class="margin-toggle" /><span class="sidenote"><a href="https://doi.org/10.1103/physrevlett.125.020601">Thermal efficiency of quantum memory
+compression</a> and
+<a href="https://doi.org/10.1103/physrevresearch.2.023039">Thermodynamically efficient local
+computation</a> </span>
+that while forward \(\epsilon\)-machines are less efficient both in memory and
+energy costs, reverse \(\epsilon\)-machines exhibit a tradeoff: they leverage
+their additional memory costs to save on energy costs. Vice-versa, quantum
+\(q\)-machines exhibit higher energy costs in order to save on memory.</p>
+
+<figure><img src="/assets/img/quantum1.png" /><figcaption class="maincolumn-figure">In a heuristic plot of memory vs. energy efficiency, we show that while both
+forward and reverse \(\epsilon\)-machines require higher memory overhead than
+the \(q\)-machines, only the reverse \(\epsilon\)-machines achieve maximum
+energy efficiency.
+From <a href="https://doi.org/10.1103/physrevresearch.2.023039">(Loomis &amp; Crutchfield 2020)</a>.</figcaption></figure>
+
+<p><strong>Takeaway: Quantum can save space and time—but when it comes to generating
+patterns, classical is still the most energy-efficient way to go.</strong></p>
+
+<p><span class="newthought">Publications</span></p>
+
+<h4 id="loomis--crutchfield-thermodynamically-efficient-local-computation-2020"><a href="https://doi.org/10.1103/physrevresearch.2.023039">Loomis &amp; Crutchfield. Thermodynamically efficient local computation. 2020</a></h4>
+<h4 id="loomis--crutchfield-thermal-efficiency-of-quantum-memory-compression-2020"><a href="https://doi.org/10.1103/physrevlett.125.020601">Loomis &amp; Crutchfield. Thermal efficiency of quantum memory compression. 2020</a></h4>
+<h4 id="loomis-et-al-optimizing-quantum-models-of-classical-channels-2020"><a href="https://doi.org/10.1007/s10955-020-02649-2">Loomis et al. Optimizing quantum models of classical channels. 2020</a></h4>
+<h4 id="loomis--crutchfield-strong-and-weak-optimizations-in-classical-and-quantum-models-of-stochastic-processes-2019"><a href="https://doi.org/10.1007/s10955-019-02344-x">Loomis &amp; Crutchfield. Strong and weak optimizations in classical and quantum models of stochastic processes. 2019</a></h4>
+<h4 id="aghamohammadi-et-al-extreme-quantum-memory-advantage-for-rare-event-sampling-2018"><a href="https://doi.org/10.1103/physrevx.8.011025">Aghamohammadi et al. Extreme quantum memory advantage for rare-event sampling. 2018</a></h4>
+
+<ul>
+  <li><a href="/projects/">Return to top</a></li>
+</ul>
+
+<hr class="slender" />
+
+<h2 id="stoclust"><code class="language-plaintext highlighter-rouge">stoclust</code><a name="stoclust"></a></h2>
+<h4 id="stochastic-clustering-in-python">Stochastic clustering in Python</h4>
+
+<p><code class="language-plaintext highlighter-rouge">stoclust</code> is a package of modularized methods for stochastic and ensemble
+clustering techniques. By modular, I mean that there are few methods in this
+package which act as a single pipeline for clustering a dataset–––rather, the
+methods each form a unit of what might be a larger clustering routine.</p>
+
+<p>These modular units are designed to be compatible with general clustering
+methods from other packages, like <code class="language-plaintext highlighter-rouge">scipy.clustering</code> or <code class="language-plaintext highlighter-rouge">sklearn.cluster</code>. However,
+we also provide specific methods for implementing clustering algorithms whose
+underlying mathematics is rooted in stochastic analysis and dynamics.
+Additionally, one can add a stochastic twist to any clustering method by using
+ensemble clustering, which uses randomness to probe the stability and robustness
+of clustering results.</p>
+
+<p><span class="newthought">Packages</span></p>
+
+<h4 id="stoclust-1"><a href="https://samlikesphysics.github.io/stoclust/"><code class="language-plaintext highlighter-rouge">stoclust</code></a></h4>
+
+<ul>
+  <li><a href="/projects/">Return to top</a></li>
+</ul>
+
+<hr class="slender" />
+
+<p><span class="newthought"> <em>Rome wasn’t built in a day.</em> </span>  <em>And that would be crazy, because
+this website is far less complicated and also wasn’t built in a day. I’ll add
+more project details soon.</em></p>
+
+
+    </article>
+    <span class="print-footer">Research - Samuel P. Loomis</span>
+    <footer>
+  <hr class="slender">
+  <ul class="footer-links">
+    <li><a href="mailto:sloomis@ucdavis.edu"><img src="/assets/icons/mail.png"></a></li>    
+    
+      <li>
+        <a href="//researchgate.net/profile/Samuel-Loomis"><img src="/assets/icons/researchgate.png" alt="CH"></a>
+      </li>
+    
+      <li>
+        <a href="//linkedin.com/in/samuel-loomis-92498b88/"><img src="/assets/icons/linkedin.png" alt="CH"></a>
+      </li>
+    
+      <li>
+        <a href="//github.com/samlikesphysics"><img src="/assets/icons/github.png" alt="CH"></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+<span>&copy; 2022 &nbsp;&nbsp;SAMUEL P. LOOMIS</span></br> <br>
+<span>This site created with the <a href="//github.com/clayh53/tufte-jekyll">Tufte theme for Content-centric blogging </a> in <a href="//jekyllrb.com">Jekyll</a>.</span> 
+</div>  
+</footer>
+  </body>
+</html>

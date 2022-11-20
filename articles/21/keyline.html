@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Just For Fun: Laplacians and Keyline Agriculture in QGIS</title>
+  <meta name="description" content="Can mathematics and QGIS help keyline design? My turkey-addled mind ponders.">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+</script>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+ <!--   <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+  
+
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"> -->
+
+  <link rel="canonical" href="/articles/21/keyline">
+
+  <link rel="alternate" type="application/rss+xml" title="Samuel P. Loomis" href="/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<a href="/"><img class="badge"
+	src="/assets/img/ruby_badge.png" alt="CH"></a>
+	
+		
+  	
+		
+		    
+		      <a href="/">About me</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/publications/">Publications</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/research/">Research</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/blog/">Blog</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/css/print.css"></a>
+		    
+	    
+  	
+		
+  	
+	</nav>
+	<ul class="footer-links">
+		<li><a href="mailto:sloomis@ucdavis.edu"><img src="/assets/icons/mail.png"></a></li>    
+		
+		  <li>
+			<a href="//researchgate.net/profile/Samuel-Loomis"><img src="/assets/icons/researchgate.png" alt="CH"></a>
+		  </li>
+		
+		  <li>
+			<a href="//linkedin.com/in/samuel-loomis-92498b88/"><img src="/assets/icons/linkedin.png" alt="CH"></a>
+		  </li>
+		
+		  <li>
+			<a href="//github.com/samlikesphysics"><img src="/assets/icons/github.png" alt="CH"></a>
+		  </li>
+		  
+	  </ul>
+	  <hr class="slender">
+</header>
+    <article class="group">
+      <h1>Just For Fun: Laplacians and Keyline Agriculture in QGIS</h1>
+<p class="subtitle">November 29, 2021</p>
+
+<div class="PageNavigation" style="overflow:scroll;font-size:120%" align="center">
+    
+    |
+    <a class="next" href="/forfun/"> Home </a>
+    |
+    
+</div>
+
+<p><label for="duck" class="margin-toggle">⊕</label><input type="checkbox" id="duck" class="margin-toggle" /><span class="marginnote"><img class="fullwidth" src="/assets/img/ducks.png" /><br /><em>Sic vis turkey, para duck</em></span></p>
+
+<p>As Catie and I dream our future duck-and-sheep empire
+during our final year of graduate school,
+we’ve decided to divide up the labor of studying the philosophy of regenerative
+and sustainable farm systems. Catie is responsible for the macro-side of things
+(silvopasture, garden, animals), and I’m in charge of the micro-side (soil,
+microbes, fermentation) as well as the <em>very</em> macro-side (hydrology, nutrient
+cycles, carbon sequestration) which so very often loops back around to the
+microscopic side of things.</p>
+
+<p><label for="keyline" class="margin-toggle">⊕</label><input type="checkbox" id="keyline" class="margin-toggle" /><span class="marginnote"><img class="fullwidth" src="/assets/img/keyline.png" /><br />On this contour map of a valley, the
+(highly bowed) 180’ contour is the keyline, and its intersection with the dotted meridian is
+the keypoint. Reproduced from ‘The Keyline Plan’ by P. A. Yeomans.</span></p>
+
+<p>This Thanksgiving I had some good time to read about <em>keyline design</em>. Keyline
+design is an approach to hydrology and landscaping which predates the more
+recent permaculture movement and which, like permaculture, originated in
+Australia. The chief concern of keyline design is the efficient distribution and
+usage of water. It’s not surprising that this would be a concern in Australia.
+For my part, both my recent experiences in California—on the verge of a
+full-blown ecological crisis—and the prospect of increased drought seasons in
+North Carolina have convinced me that, whatever farm we build, water
+conservation should be one of our first concerns.</p>
+
+<p>The central concept of keyline design is the <em>keypoint</em>. Each valley in a given
+area of land has a keypoint, which lies along the central meridian of the
+valley, where the slope transitions from slow and flat to fast and rising. The
+constant-elevation contour passing through the keypoint is called the <em>keyline</em>.
+Keyline design is, in its simplest essence, design which orients itself around
+these items. More specifically, it can often involve constructing dams at the
+keypoint to aid in efficient irrigation, or contour-plowing parallel to the keyline, which
+has the effect of distributing water from wet to dry regions and reducing
+erosion.</p>
+
+<p><label for="keyline_water" class="margin-toggle">⊕</label><input type="checkbox" id="keyline_water" class="margin-toggle" /><span class="marginnote"><img class="fullwidth" src="/assets/img/keyline_waterflow.png" /><br />
+Now I’ve marked the contours with blue arrows denoting water flow, which is
+opposite to the gradient of the landscape. The keyline at 180’ passes through
+the area of greatest convergence of waterflow, shaded, which can be identified
+with the keypoint. This can be calculated as a local maximum of the Laplacian of
+ground level.</span></p>
+
+<p>Perhaps it is a side effect of the large quantity of turkey I’ve consumed this
+week, but I began to spend some of my break time thinking about how principles of vector
+calculus lie at the heart of keyline design, and may allow for quantitative aids
+to its implementation. I’m sure much of this has been worked out already—but frequently
+reinventing the wheel is often the stubborn fun of math.</p>
+
+<p>At the meridian of the valley, the gradient of the flips its perpendicular
+component, so that on either side it points towards the meridian. Where the
+valley bows inward most prominently, this change in the gradient can be quite
+rapid. Let’s call the direction perpendicular to the meridian \(x\). Then the
+change in the gradient’s perpendicular component as we move in the perpendicular
+direction (denoted \(\frac{\partial^2 h}{\partial x^2}\)) is at its (locally) largest magnitude along the
+meridian.</p>
+
+<p>The keypoint is defined as that point, on the meridian, where we transition from
+the flatter part of the valley to the steeper portion. In the flatter regions,
+the magnitude of our gradient is at its minimal level, and the steeper regions
+are where it reaches its maximum. Between these we can expect the derivative of
+the gradient along the meridian (denoted \(\frac{\partial^2 h}{\partial y^2}\)) reaches
+its largest magnitude.</p>
+
+<p>Based on both of these considerations, we can expect that the <em>Laplacian</em> 
+\(\nabla^2 h = \frac{\partial^2 h}{\partial x^2} + \frac{\partial^2 h}{\partial y^2}\)
+is at its largest magnitude at the keypoint. Now we have to be more careful
+here: Laplacians can take positive and negative values. Positive values
+correspond to points where the gradient diverges, and negative values to those
+where it converges. The gradient points uphill, so opposite to water flow; so it
+is when the Laplacian is large and positive that we can expect water
+<em>converges</em>. The positive local maxima of the Laplacian denote the keypoints of
+the land, where water flows together and is most easily caught, but also most
+likely to cause erosion.</p>
+
+<p>Now we can get to the fun part! Because the next natural question is if we can
+use publically available elevation data to identify the location of keypoints,
+using a Laplacian filter. USGS provides 3-arcsecond resolution digital elevation
+maps, and <code class="language-plaintext highlighter-rouge">scipy</code> provides a fast Laplacian filter that can be applied on large
+images. So let’s throw the two together!</p>
+
+<figure><img src="/assets/img/roanoke-lap.png" /><figcaption class="maincolumn-figure">Seen through a Laplacian filter: the region between the 36th and 37th parallels
+and the 79th and 80th meridians, which contains the Roanoke and Haw basins and
+crosses the border of North Carolina and Virginia. Red denotes locations of
+divergence, and blue locations of convergence. Right-click and &#8220;open image&#8221; to
+view a larger version.</figcaption></figure>
+
+<p>The result is striking. It’s actually my new wallpaper. But can we use this to
+discover keylines?</p>
+
+<p>Using the USGS data, I also generated a contour map of Catie’s family’s farm,
+and overlaid the two in QGIS. The advantage of this is that we can freely start
+to sketch out the keyline design with the aid of the quantitative background.</p>
+
+<figure><img src="/assets/img/QGIS1.png" /><figcaption class="maincolumn-figure">Hunting for keypoints and keylines!</figcaption></figure>
+
+<p>You’ll notice that at this resolution things get quite grainy. In particular,
+precisely identifying the optimal values of the Laplacian may not be quite
+possible, which is disappointing. However, what we have may be good enough,
+and may be especially helpful when used in conjunction with on-farm analysis.</p>
+
+<p>QGIS makes this particularly simple. Once a potential keypoint and its keyline
+contour are identified, the contour can be traced out and duplicated, allowing
+the tracing of parallel lines for off-contour irrigation above the keyline. This
+off-contour irrigation redirects the water, as it tries to gather in the valley,
+towards the ridges, increasing overall soil inundation while delaying runoff and
+reducing erosion.</p>
+
+<figure><img src="/assets/img/QGIS2.png" /><figcaption class="maincolumn-figure">Red curves indicate candidate keylines, while blue lines are the parallel
+contours, which criss-cross the higher contours, redistributing water flow.</figcaption></figure>
+
+<p>Well, there’s a fair way to go to make these tools helpful, and I won’t be
+able to utilize them myself for a while yet. But it’s always fun to learn
+new things through a familiar lens—in this case, keylines through Laplacians!</p>
+
+
+<div class="PageNavigation" style="overflow:scroll;font-size:120%" align="center">
+    
+    |
+    <a class="next" href="/forfun/"> Home </a>
+    |
+    
+</div>
+
+
+    </article>
+    <span class="print-footer">Just For Fun: Laplacians and Keyline Agriculture in QGIS - November 29, 2021 - Samuel P. Loomis</span>
+    <footer>
+  <hr class="slender">
+  <ul class="footer-links">
+    <li><a href="mailto:sloomis@ucdavis.edu"><img src="/assets/icons/mail.png"></a></li>    
+    
+      <li>
+        <a href="//researchgate.net/profile/Samuel-Loomis"><img src="/assets/icons/researchgate.png" alt="CH"></a>
+      </li>
+    
+      <li>
+        <a href="//linkedin.com/in/samuel-loomis-92498b88/"><img src="/assets/icons/linkedin.png" alt="CH"></a>
+      </li>
+    
+      <li>
+        <a href="//github.com/samlikesphysics"><img src="/assets/icons/github.png" alt="CH"></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+<span>&copy; 2022 &nbsp;&nbsp;SAMUEL P. LOOMIS</span></br> <br>
+<span>This site created with the <a href="//github.com/clayh53/tufte-jekyll">Tufte theme for Content-centric blogging </a> in <a href="//jekyllrb.com">Jekyll</a>.</span> 
+</div>  
+</footer>
+  </body>
+</html>
