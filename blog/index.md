@@ -1,5 +1,5 @@
 ---
-layout: full-width
+layout: page
 title: Blog
 # Note that this index page uses a full-width layout!
 ---
