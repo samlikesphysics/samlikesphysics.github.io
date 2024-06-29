@@ -1,15 +1,21 @@
-<footer>
-  <hr class="slender">
-  <ul class="footer-links">
-    <li><a href="mailto:sloomis@ucdavis.edu"><img src="{{site.baseurl}}/assets/icons/mail.png"></a></li>    
-    {% for entry in site.data.social %}
-      <li>
-        <a href="{{ entry.link }}"><img src="{{site.baseurl}}/assets/icons/{{ entry.icon }}.png" alt="CH"></a>
-      </li>
-    {% endfor %}  
-  </ul>
-<div class="credits">
-<span>&copy; {{ site.time | date: '%Y' }} &nbsp;&nbsp;{{site.author | upcase }}</span></br> <br>
-<span>This site created with the <a href="//github.com/clayh53/tufte-jekyll">Tufte theme for Content-centric blogging </a> in <a href="//jekyllrb.com">Jekyll</a>.</span> 
-</div>  
+<footer class="footer">
+  <div class="columns">
+    <p class="column">
+      &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>
+      {%- if site.author -%}
+        &nbsp;<a href="{{ site.author.url }}" target="_blank">{{ site.author.name }}</a>
+      {%- endif -%}. All rights reserved.
+    </p>
+
+    <p class="column">
+      Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> & <a href="https://github.com/vfvong/jekyll-theme-tao" target="_blank">Tao</a>
+    </p>
+
+    {% if site.description %}
+    <p class="column">
+      {{ site.description }}
+    </p>
+    {% endif %}
+  </div>
 </footer>
+  

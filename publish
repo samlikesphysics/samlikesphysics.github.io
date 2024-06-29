@@ -1,0 +1,20 @@
+#!/bin/bash
+
+bundle exec jekyll clean
+bundle exec jekyll serve
+PID=$!
+kill $PID
+cd _site
+rm publish
+git init
+git remote add origin https://sploomis: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@github.com/samlikesphysics/samlikesphysics.github.io.git/
+git checkout -b gh-pages 
+git add *
+git commit -m "Publishing site"
+git push origin gh-pages -f
+cd ..
+git remote set-url origin https://sploomis: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@github.com/samlikesphysics/samlikesphysics.github.io.git/
+git add *
+echo $1
+git commit -m "$1"
+git push origin main -f

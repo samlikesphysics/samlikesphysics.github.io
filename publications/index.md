@@ -3,7 +3,7 @@ layout: page
 title: Publications
 # Note that this index page uses a full-width layout!
 ---
-{% newthought Preprints %}
+# Preprints
   <ul class="content-listing ">
     {% for pub in site.data.preprints %}      
         <li class="listing">
@@ -19,7 +19,7 @@ title: Publications
 
   <hr class="slender">
 
-{% newthought Published %}
+# Published
 
   <ul class="content-listing ">
     {% for pub in site.data.pubs %}      

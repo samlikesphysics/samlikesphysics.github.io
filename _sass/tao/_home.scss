@@ -1,0 +1,67 @@
+/**
+ * Styles for the home page
+ */
+
+.post-entry {
+  margin-bottom: calc(2 * var(--spacing));
+
+  // Refer: https://jonathannicol.com/blog/2014/06/16/centre-crop-thumbnails-with-css/
+  .thumbnail-container {
+    margin-top: var(--spacing);
+    border-radius: .5em;
+    overflow: hidden;
+    height: 50vw;
+    max-height: 240px;
+    position: relative;
+
+    .post-image {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 100%;
+      height: auto;
+      -webkit-transform: translate(-50%,-50%);
+          -ms-transform: translate(-50%,-50%);
+              transform: translate(-50%,-50%);
+    }
+  }
+}
+
+.pagination {
+  margin-top: calc(2 * var(--spacing));
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: .8em;
+
+  .prev, .next {
+    padding: var(--spacing);
+    border: 1px solid;
+  }
+
+  .prev {
+    border-radius: 1em 0 0 1em;
+  }
+
+  .next {
+    border-radius: 0 1em 1em 0;
+  }
+
+  .home-prev, .home-next {
+    text-align: center;
+  }
+
+  .unable {
+    color: var(--body-color-light);
+    border-style: dashed;
+  }
+
+  a {
+    color: var(--body-color-light);
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      background-color: var(--body-fg);
+    }
+  }
+}

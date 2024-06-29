@@ -1,6 +1,9 @@
-- link: //researchgate.net/profile/Samuel-Loomis
-  icon: researchgate
-- link: //linkedin.com/in/samuel-loomis-92498b88/
-  icon: linkedin
-- link: //github.com/samlikesphysics 
-  icon: github
+- url: //www.linkedin.com/in/samuel-loomis-phd-92498b88/
+  icon: fa-brands fa-linkedin
+  title: LinkedIn
+- url: //github.com/samlikesphysics 
+  icon: fa-brands fa-github
+  title: GitHub
+- url: //researchgate.net/profile/Samuel-Loomis
+  icon: fa-brands fa-researchgate
+  title: ResearchGate

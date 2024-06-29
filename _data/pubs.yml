@@ -1,7 +1,13 @@
 - authors: Loomis, S. P.; Crutchfield, J. P.
+  title: Topology, convergence, and reconstruction of predictive states
+  journal: Physica D
+  year: 2022
+  doi: 10.1016/j.physd.2022.133621
+- authors: Loomis, S. P.; Crutchfield, J. P.
   title: Exploring predictive states via Cantor embeddings and Wasserstein distance
   journal: Chaos
   year: 2022
+  doi: 10.1063/5.0102603
 - authors: Loomis, S. P.; Crutchfield, J. P.
   title: Thermal efficiency of quantum memory compression
   journal: Phys. Rev. Lett
