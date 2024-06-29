@@ -18,11 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Complexody
+title: Infomania
 email: samlikesphysics@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Information theory, data science, and complex systems
-tagline: An ode to information theory
+tagline: Modeling without modeling
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
